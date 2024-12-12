@@ -1,11 +1,10 @@
 {
-  "name": "tedawf.com",
+  "name": "luislois.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run gen && next build",
-    "gen": "npx ts-node ./scripts/generate.ts",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },

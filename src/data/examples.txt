@@ -1,0 +1,72 @@
+Career
+ {
+   "name": "Singapore Institute of Technology",
+   "href": "https:www.singaporetech.edu.sg",
+   "title": "Software Developer (Contract)",
+   "logo": "/sit.png",
+   "start": "Apr 2023",
+   "end": "Jun 2023",
+   "description": [
+     "Built NFTVue, a NFT gallery website that allows students to connect their crypto wallets to view and verify their school event-issued NFTs",
+     "Worked on DemoConstruct, a full-stack web application (React + Python) that uses Meshroom to reconstruct 3D models from captured images"
+   ],
+   "links": [
+     {
+       "name": "NFTVue",
+       "href": "https:nftvue.vercel.app",
+       "icon": "globe"
+     }
+   ]
+
+ }
+
+ education
+ {
+      "name": "Digipen Institute of Technology Singapore",
+      "href": "https://www.digipen.edu.sg",
+      "title": "BS in Computer Science in Real-Time Interactive Simulation",
+      "logo": "/digipen.png",
+      "start": "Sep 2019",
+      "end": "Apr 2023",
+      "description": [
+        "Graduated with a Minor in Mathematics",
+        "President of Digipen Student Management Committee for freshman year",
+        "3-time recipient of the Dean's Honor List"
+      ],
+      "links": [
+        {
+          "name": "Final Year Project",
+          "href": "https://games.digipen.edu/games/rapid-ride-fight",
+          "icon": "globe"
+        },
+        {
+          "name": "2nd Year Project",
+          "href": "https://games.digipen.edu/games/glowing-under",
+          "icon": "globe"
+        }
+      ]
+    },
+
+Projects
+{
+      "name": "NFTVue",
+      "description": "Non-Fungible Tokens (NFTs) Gallery Viewer website that allows users to connect their crypto wallets to view and verify their tokens",
+      "href": "https://nftvue.vercel.app",
+      "image": "/nftvue.png",
+      "tags": [
+        "NextJS",
+        "TailwindCSS",
+        "MetaMask",
+        "WalletConnect",
+        "Web3",
+        "NFTScan",
+        "HashKey DID"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://nftvue.vercel.app",
+          "icon": "globe"
+        }
+      ]
+    },

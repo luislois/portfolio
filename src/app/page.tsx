@@ -5,17 +5,13 @@ import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/Button";
 import { getPosts } from "@/lib/posts";
-import {
-  ArrowDownRight,
-  ArrowRightIcon,
-  FileDown
-} from "lucide-react";
+import { ArrowRightIcon, FileDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import path from "path";
 
 const blogDirectory = path.join(process.cwd(), "content");
-const TED_BIRTH_YEAR = 1997;
+const LUIS_BIRTH_YEAR = 2000;
 const LIMIT = 2; // max show 2
 
 export default async function Home() {
@@ -26,34 +22,23 @@ export default async function Home() {
       <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
         <Image
           className="rounded-lg"
-          src="/ted.jpg"
-          alt="Photo of Ted"
+          src="/luis.jpg"
+          alt="Photo of Luis"
           width={175}
           height={175}
           priority
         />
         <div className="flex flex-col">
-          <h1 className="title text-5xl">hi ted here 👋</h1>
+          <h1 className="title text-5xl">Hi Luis Here 👋</h1>
           <p className="mt-4 font-light">
             {/* Update my age */}
-            {new Date().getFullYear() - TED_BIRTH_YEAR}
-            -year-old <s>game</s> software developer from Singapore 🇸🇬
+            {new Date().getFullYear() - LUIS_BIRTH_YEAR}
+            -year-old software developer from Spain 🇪🇸
           </p>
           <p className="mt-2 font-light">
-            I like to develop full-stack, drink instant coffee and get coding
-            advice from my cat,{" "}
-            <Link
-              href="https://www.instagram.com/gomugomu.cat"
-              target="_blank"
-              className="link font-semibold"
-            >
-              Luffy.
-            </Link>
+            I specialize in backend development, enjoy coding in my free time,
+            and can&apos;t start the day without a cup of instant coffee ☕
           </p>
-          <div className="mt-4 flex items-end gap-1">
-            <p className="font-semibold">Ask the chatbot anything about me</p>
-            <ArrowDownRight className="size-5 animate-bounce" />
-          </div>
           <section className="mt-8 flex items-center gap-8">
             <Link href="/resume.pdf" target="_blank">
               <Button variant="outline">
@@ -70,7 +55,7 @@ export default async function Home() {
 
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h2 className="title text-2xl sm:text-3xl">featured projects</h2>
+          <h2 className="title text-2xl sm:text-3xl">Featured projects</h2>
           <LinkWithIcon
             href="/projects"
             position="right"
@@ -83,7 +68,7 @@ export default async function Home() {
 
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h2 className="title text-3xl">recent posts</h2>
+          <h2 className="title text-3xl">Recent posts</h2>
           <LinkWithIcon
             href="/blog"
             position="right"
